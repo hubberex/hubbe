@@ -1,7 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>App Shelf</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ANALYTICS (GoatCounter): cookie-free visit counter, no consent banner needed.
+     Dashboard: https://hubbe.goatcounter.com -->
+<script data-goatcounter="https://hubbe.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+<!-- ADS (Google AdSense): requires an approved AdSense account.
+     1. Apply at https://adsense.google.com and wait for approval
+     2. Replace ca-pub-XXXXXXXXXXXXXXXX below (in both this script and the <ins> tag further down) with your publisher ID
+     3. Replace XXXXXXXXXX in the <ins> tag's data-ad-slot with your ad unit's slot ID
+     Note: neither script will fire while previewed inside the Claude artifact sandbox (it blocks outside network calls) — they only start working once this file is hosted on your own domain. -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
 <style>
   :root {
     --ground: #eeeae1;
@@ -170,8 +187,21 @@
   @media (prefers-reduced-motion: reduce) {
     .get-btn { transition: none; }
   }
+
+  .ad-slot {
+    border: 1px dashed var(--line);
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
 </style>
 
+</head>
+<body>
 <main>
   <header>
     <h1>App Shelf</h1>
@@ -203,4 +233,22 @@
       </span>
     </a>
   </div>
+
+  <!-- ADS: placeholder ad unit. Replace ca-pub-XXXXXXXXXXXXXXXX and data-ad-slot with your real
+       AdSense IDs once approved. Shows as an empty dashed box until then, and stays empty in the
+       artifact preview regardless (see note above). -->
+  <div class="ad-slot">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
 </main>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</body>
+</html>
