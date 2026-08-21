@@ -12,12 +12,12 @@
      Dashboard: https://hubbe.goatcounter.com -->
 <script data-goatcounter="https://hubbe.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
-<!-- ADS (Google AdSense): publisher ID ca-pub-9090595118646421 is set.
-     Still needed: replace XXXXXXXXXX in the <ins> tag's data-ad-slot below with a real ad unit's slot ID
-     (create one at https://adsense.google.com > Ads > By ad unit), and add an ads.txt file at your
-     domain's root with: google.com, pub-9090595118646421, DIRECT, f08c47fec0942fa0
+<!-- ADS (Google AdSense): publisher ID ca-pub-9090595118646421 and ad slot 3239986947 ("App Shelf
+     footer") are both set. Make sure ads.txt is uploaded at your domain's root:
+     google.com, pub-9090595118646421, DIRECT, f08c47fec0942fa0
      Note: this won't render real ads while previewed inside the Claude artifact sandbox (it blocks
-     outside network calls) — it only starts working once this file is hosted on your own domain. -->
+     outside network calls) — it only starts working once this file is hosted on your own domain,
+     and real ads may take a bit to start showing while AdSense reviews the new placement. -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9090595118646421" crossorigin="anonymous"></script>
 
 <style>
@@ -242,14 +242,13 @@
     </a>
   </div>
 
-  <!-- ADS: publisher ID is set. Still replace data-ad-slot below with a real ad unit slot ID.
-       Shows as an empty dashed box until then, and stays empty in the artifact preview
-       regardless (see note above). -->
+  <!-- ADS: fully configured (see note above). Stays empty in the artifact preview
+       regardless, since outside network calls are blocked there. -->
   <div class="ad-slot">
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-9090595118646421"
-         data-ad-slot="XXXXXXXXXX"
+         data-ad-slot="3239986947"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
   </div>
