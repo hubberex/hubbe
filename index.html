@@ -12,12 +12,13 @@
      Dashboard: https://hubbe.goatcounter.com -->
 <script data-goatcounter="https://hubbe.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
-<!-- ADS (Google AdSense): requires an approved AdSense account.
-     1. Apply at https://adsense.google.com and wait for approval
-     2. Replace ca-pub-XXXXXXXXXXXXXXXX below (in both this script and the <ins> tag further down) with your publisher ID
-     3. Replace XXXXXXXXXX in the <ins> tag's data-ad-slot with your ad unit's slot ID
-     Note: neither script will fire while previewed inside the Claude artifact sandbox (it blocks outside network calls) — they only start working once this file is hosted on your own domain. -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<!-- ADS (Google AdSense): publisher ID ca-pub-9090595118646421 is set.
+     Still needed: replace XXXXXXXXXX in the <ins> tag's data-ad-slot below with a real ad unit's slot ID
+     (create one at https://adsense.google.com > Ads > By ad unit), and add an ads.txt file at your
+     domain's root with: google.com, pub-9090595118646421, DIRECT, f08c47fec0942fa0
+     Note: this won't render real ads while previewed inside the Claude artifact sandbox (it blocks
+     outside network calls) — it only starts working once this file is hosted on your own domain. -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9090595118646421" crossorigin="anonymous"></script>
 
 <style>
   :root {
@@ -198,6 +199,13 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
+
+  footer {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.78rem;
+    line-height: 1.6;
+  }
 </style>
 
 </head>
@@ -234,17 +242,22 @@
     </a>
   </div>
 
-  <!-- ADS: placeholder ad unit. Replace ca-pub-XXXXXXXXXXXXXXXX and data-ad-slot with your real
-       AdSense IDs once approved. Shows as an empty dashed box until then, and stays empty in the
-       artifact preview regardless (see note above). -->
+  <!-- ADS: publisher ID is set. Still replace data-ad-slot below with a real ad unit slot ID.
+       Shows as an empty dashed box until then, and stays empty in the artifact preview
+       regardless (see note above). -->
   <div class="ad-slot">
     <ins class="adsbygoogle"
          style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-client="ca-pub-9090595118646421"
          data-ad-slot="XXXXXXXXXX"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
   </div>
+
+  <footer>
+    Last updated August 21, 2026<br>
+    HubbeInc &copy; 2026
+  </footer>
 </main>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
